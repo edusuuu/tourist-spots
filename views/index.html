@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tourist Attraction</title>
+
+    <link rel="stylesheet" href="Main.css" />
+    <link rel="stylesheet" href="Intro.css" />
+    <link rel="stylesheet" href="Attraction.css" />
+    <link rel="stylesheet" href="Gallery.css" />
+    <link rel="stylesheet" href="About.css" />
+    <link rel="stylesheet" href="Contact.css" />
+    <link rel="stylesheet" href="details.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+
+    <script src="Intro.js" defer></script>
+    <script src="Attraction.js" defer></script>
+    <script src="Gallery.js" defer></script>
+  </head>
+  <body>
+    <section class="IntroSec">
+      <header>
+        <nav class="StickyNav">
+          <div class="IntroContainer">
+            <ul class="menu">
+              <li><a href="#attractions">Attractions</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div class="IntroContainer">
+        <h1>Welcome to Baguio!</h1>
+        <p>Discover the beauty and wonders of our destination</p>
+        <a href="https://en.wikipedia.org/wiki/Baguio" class="infoBtn"
+          >About Baguio</a
+        >
+      </div>
+    </section>
+
+    <section id="attractions" class="AttractSec">
+      <h2 class="MainAttract">Baguio</h2>
+
+      <div class="Attractions">
+        <div class="AttractContainer">
+          <div class="imgcontainer">
+            <img src="burnhampark1.jpg" alt="" />
+            <img src="burnhampark2.jpg" alt="" />
+            <div class="content">
+              <h3>Burnham Park</h3>
+              <div class="info">
+                <p>Municipality:</p>
+                <p>Baguio City #1</p>
+              </div>
+            </div>
+          </div>
+          <p class="TouristSpot">Tourist Spot #1</p>
+        </div>
+
+        <div class="AttractContainer">
+          <div class="imgcontainer">
+            <img src="burnhampark1.jpg" alt="" />
+            <img src="burnhampark2.jpg" alt="" />
+            <div class="content">
+              <h3>Burnham Park</h3>
+              <div class="info">
+                <p>Municipality:</p>
+                <p>Baguio City #2</p>
+              </div>
+            </div>
+          </div>
+          <p class="TouristSpot">Tourist Spot #2</p>
+        </div>
+
+        <div class="AttractContainer">
+          <div class="imgcontainer">
+            <img src="burnhampark1.jpg" alt="" />
+            <img src="burnhampark2.jpg" alt="" />
+            <div class="content">
+              <h3>Burnham Park</h3>
+              <div class="info">
+                <p>Municipality:</p>
+                <p>Baguio City #3</p>
+              </div>
+            </div>
+          </div>
+          <p class="TouristSpot">Tourist Spot #3</p>
+        </div>
+
+        <div class="AttractContainer">
+          <div class="imgcontainer">
+            <img class="image" src="burnhampark1.jpg" alt="" />
+            <img class="image" src="burnhampark2.jpg" alt="" />
+            <div class="content">
+              <h3>Burnham Park</h3>
+              <div class="info">
+                <p>Municipality:</p>
+                <p>Baguio City #4</p>
+              </div>
+            </div>
+          </div>
+          <p class="TouristSpot">Tourist Spot #4</p>
+        </div>
+      </div>
+
+      <div class="details">
+        <div class="spot hide">
+          <h3 class="spot-attraction"></h3>
+          <p class="spot-municipality"></p>
+          <p class="spot-address"></p>
+          <p class="spot-details"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="GallSec">
+      <div class="GalleryContainer">
+        <h2>Photo Gallery</h2>
+        <div class="ImageWrapper">
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <div class="ImageCarousel">
+            <img src="burnhampark1.jpg" alt="1" />
+            <img src="burnhampark2.jpg" alt="2" />
+            <img src="burnhampark1.jpg" alt="3" />
+            <img src="burnhampark2.jpg" alt="4" />
+            <img src="burnhampark1.jpg" alt="5" />
+          </div>
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="AboutContainer">
+        <h2>About Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="ContactContainer">
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions or inquiries, feel free to get in touch with
+          us.
+        </p>
+        <form>
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Your Email" />
+          <textarea placeholder="Your Message"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Tourist Attraction. All rights reserved.</p>
+        <ul class="social-icons">
+          <li>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

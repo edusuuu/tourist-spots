@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<locations>
+    <spot>
+        <attraction>Burnham Park 1</attraction>
+        <municipality>Baguio City 1</municipality>
+        <address>Fake Address 1</address>
+        <details>fake details 1</details>
+    </spot>
+    <spot>
+        <attraction>Burnham Park 2</attraction>
+        <municipality>Baguio City 2</municipality>
+        <address>Fake Address 2</address>
+        <details>fake details 2</details>
+    </spot>
+    <spot>
+        <attraction>Burnham Park 3</attraction>
+        <municipality>Baguio City 3</municipality>
+        <address>Fake Address 3</address>
+        <details>fake details 3</details>
+    </spot>
+    <spot>
+        <attraction>Burnham Park 4</attraction>
+        <municipality>Baguio City 4</municipality>
+        <address>Fake Address 4</address>
+        <details>fake details 4</details>
+    </spot>
+</locations>

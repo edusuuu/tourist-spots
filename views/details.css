@@ -1,0 +1,37 @@
+.details {
+  min-height: 200px;
+  max-width: 400px;
+}
+
+.details .spot {
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.details .spot-attraction {
+  text-transform: uppercase;
+  padding-inline: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.details .spot-municipality {
+  padding-inline: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.details .spot-address {
+  padding-inline: 20px;
+  font-size: 16px;
+}
+.details .spot-details {
+  padding: 10px 20px;
+  font-size: 12px;
+}
+
+.spot.show {
+  display: block;
+}
+
+.spot.hide {
+  display: none;
+}

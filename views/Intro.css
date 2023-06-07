@@ -1,0 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.IntroSec {
+  background-image: url('baguio.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 0px 0;
+  text-align: center;
+}
+  
