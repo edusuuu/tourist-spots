@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     let spotAddress = document.querySelector(".spot-address");
     let spotDetails = document.querySelector(".spot-details");
     const SPOT_WRAPPER = document.querySelector(".details > .spot");
+    const detail = document.querySelector(".details");
+    const detSpot = document.querySelector(".details .spot");
 
     let spots = await fetchSpots();
     PopulateAttractions(spots);
@@ -62,6 +64,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         attraction.onclick = () => {
             SPOT_WRAPPER.classList.remove("hide");
             SPOT_WRAPPER.classList.add("show");
+            detail.style.color = "black";
+            detSpot.style.borderColor = "black";
             UpdateDetails(index);
         };
     });

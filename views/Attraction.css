@@ -4,15 +4,16 @@
     justify-content: center;
     align-items: center;
     padding-top: 20px;
-    padding-bottom: 20px;
     user-select: none;
 }
+
 
 .Attractions {
     display: flex;
     flex-direction: row;
     user-select: none;
     padding: 10px;
+    margin-bottom: 20px;
 }
 
 .MainAttract {
