@@ -1,27 +1,28 @@
 <?xml version="1.0"?>
 <locations>
     <spot>
-        <attraction>Burnham Park 1</attraction>
-        <municipality>Baguio City 1</municipality>
-        <address>Fake Address 1</address>
-        <details>fake details 1</details>
+        <attraction>White Island</attraction>
+        <address>White Beach, Boracay, Aklan</address>
+        <details>Boracay's White Beach has been recognized as one of the most beautiful beaches in the world through the years. There's something about its natural beauty – its crystal blue water, its pure white sand, and its magical sunsets.</details>
     </spot>
     <spot>
-        <attraction>Burnham Park 2</attraction>
-        <municipality>Baguio City 2</municipality>
-        <address>Fake Address 2</address>
-        <details>fake details 2</details>
+        <attraction>Boracay Island</attraction>
+        <address>Banwa it Malay, Lalawigan ng Aklan</address>
+        <details>Boracay Island is a very small island in Philippines. But, what it offers is completely opposite to its size. With an infinite number of activities both above water and underwater, the island will amaze you like never before.</details>
     </spot>
     <spot>
-        <attraction>Burnham Park 3</attraction>
-        <municipality>Baguio City 3</municipality>
-        <address>Fake Address 3</address>
-        <details>fake details 3</details>
+        <attraction>Boracay Beach Path</attraction>
+        <address>XW4G+XM7, White Beach Path, Malay, Aklan</address>
+        <details>White Beach Path runs alongside White Beach, starting from Boat Station 1 and terminating by Lorenzo South. Most of the island's business' are concentrated on this strip.</details>
     </spot>
     <spot>
-        <attraction>Burnham Park 4</attraction>
-        <municipality>Baguio City 4</municipality>
-        <address>Fake Address 4</address>
-        <details>fake details 4</details>
+        <attraction>Bulabog Beach</attraction>
+        <address>Banwa it Malay</address>
+        <details>Bulabog Beach is a beautiful beach located on the eastern side of Boracay Island in the Philippines. It is famous for its vibrant and dynamic atmosphere, particularly among windsurfers and kiteboarders.</details>
+    </spot>
+    <spot>
+        <attraction>Tambisaan Beach</attraction>
+        <address>WWXW+XR4, Boracay Tambisaan Jetty Port Rd, Malay, Aklan</address>
+        <details>Tambisaan Beach is a hidden gem located on the eastern side of Boracay Island in the Philippines. Tambisaan Beach is another beautiful beach located on the eastern side of Boracay Island in the Philippines. It offers a more tranquil and secluded experience compared to the bustling White Beach.</details>
     </spot>
 </locations>

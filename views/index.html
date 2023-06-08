@@ -22,6 +22,7 @@
     <script src="Intro.js" defer></script>
     <script src="Attraction.js" defer></script>
     <script src="Gallery.js" defer></script>
+    <script src="About.js" defer></script>
   </head>
   <body>
     <section class="IntroSec">
@@ -39,100 +40,101 @@
       </header>
 
       <div class="IntroContainer">
-        <h1>Welcome to Baguio!</h1>
+        <h1>Welcome to Boracay!</h1>
         <p>Discover the beauty and wonders of our destination</p>
-        <a href="https://en.wikipedia.org/wiki/Baguio" class="infoBtn"
-          >About Baguio</a
-        >
+        <a href="https://en.wikipedia.org/wiki/Boracay" class="infoBtn">About Boracay</a>
       </div>
     </section>
 
     <section id="attractions" class="AttractSec">
-      <h2 class="MainAttract">Baguio</h2>
-
+      <h2 class="MainAttract">Boracay</h2>
+    
       <div class="Attractions">
         <div class="AttractContainer">
           <div class="imgcontainer">
-            <img src="burnhampark1.jpg" alt="" />
-            <img src="burnhampark2.jpg" alt="" />
+            <img src="images/whiteBeach1.jpg" alt="" />
+            <img src="images/whiteBeach.jpg" alt="" />
             <div class="content">
-              <h3>Burnham Park</h3>
-              <div class="info">
-                <p>Municipality:</p>
-                <p>Baguio City #1</p>
-              </div>
+              <p class="locName">Location:</p>
+              <h3></h3>
             </div>
           </div>
-          <p class="TouristSpot">Tourist Spot #1</p>
+          <p class="TouristSpot"></p>
         </div>
-
+    
         <div class="AttractContainer">
           <div class="imgcontainer">
-            <img src="burnhampark1.jpg" alt="" />
-            <img src="burnhampark2.jpg" alt="" />
+            <img src="images/boracayIsland.jpg" alt="" />
+            <img src="images/boracayIsland1.jpg" alt="" />
             <div class="content">
-              <h3>Burnham Park</h3>
-              <div class="info">
-                <p>Municipality:</p>
-                <p>Baguio City #2</p>
-              </div>
+              <p class="locName">Location:</p>
+              <h3></h3>
             </div>
           </div>
-          <p class="TouristSpot">Tourist Spot #2</p>
+          <p class="TouristSpot"></p>
         </div>
-
+    
         <div class="AttractContainer">
           <div class="imgcontainer">
-            <img src="burnhampark1.jpg" alt="" />
-            <img src="burnhampark2.jpg" alt="" />
+            <img src="images/beachPath1.jpg" alt="" />
+            <img src="images/beachPath.jpg" alt="" />
             <div class="content">
-              <h3>Burnham Park</h3>
-              <div class="info">
-                <p>Municipality:</p>
-                <p>Baguio City #3</p>
-              </div>
+              <p class="locName">Location:</p>
+              <h3></h3>
             </div>
           </div>
-          <p class="TouristSpot">Tourist Spot #3</p>
+          <p class="TouristSpot"></p>
         </div>
-
+    
         <div class="AttractContainer">
           <div class="imgcontainer">
-            <img class="image" src="burnhampark1.jpg" alt="" />
-            <img class="image" src="burnhampark2.jpg" alt="" />
+            <img src="images/bulabogBeach.jpg" alt="" />
+            <img src="images/bulabogBeach1.jpg" alt="" />
             <div class="content">
-              <h3>Burnham Park</h3>
-              <div class="info">
-                <p>Municipality:</p>
-                <p>Baguio City #4</p>
-              </div>
+              <p class="locName">Location:</p>
+              <h3></h3>
             </div>
           </div>
-          <p class="TouristSpot">Tourist Spot #4</p>
+          <p class="TouristSpot"></p>
         </div>
-      </div>
-
+        
+        <div class="AttractContainer">
+          <div class="imgcontainer">
+            <img src="images/tambisaanBeach.jpg" alt="" />
+            <img src="images/tambisaanBeach1.jpg" alt="" />
+            <div class="content">
+              <p class="locName">Location:</p>
+              <h3></h3>
+            </div>
+          </div>
+          <p class="TouristSpot"></p>
+        </div>
+    
       <div class="details">
-        <div class="spot hide">
+        <div class="spot">
           <h3 class="spot-attraction"></h3>
-          <p class="spot-municipality"></p>
           <p class="spot-address"></p>
           <p class="spot-details"></p>
         </div>
       </div>
     </section>
-
+    
     <section id="gallery" class="GallSec">
       <div class="GalleryContainer">
         <h2>Photo Gallery</h2>
         <div class="ImageWrapper">
           <i id="left" class="fa-solid fa-angle-left"></i>
           <div class="ImageCarousel">
-            <img src="burnhampark1.jpg" alt="1" />
-            <img src="burnhampark2.jpg" alt="2" />
-            <img src="burnhampark1.jpg" alt="3" />
-            <img src="burnhampark2.jpg" alt="4" />
-            <img src="burnhampark1.jpg" alt="5" />
+            <img src="images/beachPath.jpg" alt="1" />
+            <img src="images/boracayIsland.jpg" alt="2" />
+            <img src="images/beachPath1.jpg" alt="3" />
+            <img src="images/boracayIsland1.jpg" alt="4" />
+            <img src="images/bulabogBeach.jpg" alt="5" />
+            <img src="images/tambisaanBeach.jpg" alt="6" />
+            <img src="images/whiteBeach.jpg" alt="7" />
+            <img src="images/bulabogBeach1.jpg" alt="8" />
+            <img src="images/whiteBeach1.jpg" alt="9" />
+            <img src="images/tambisaanBeach1.jpg" alt="10" />
           </div>
           <i id="right" class="fa-solid fa-angle-right"></i>
         </div>
@@ -142,12 +144,70 @@
     <section id="about" class="about">
       <div class="AboutContainer">
         <h2>About Us</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
+        <div class="InfoContainer">
+          <div class="aboutUs">
+            <div class="studentProfile">
+              <div>
+                <p class="studentInfo">Student Name:</p>
+                <p class="studentName"></p>
+              </div>
+              <div>
+                <p class="studentInfo">Student Age:</p>
+                <p class="studentAge"></p>
+              </div>
+              <div>
+                <p class="studentInfo">Student Gender:</p>
+                <p class="studentGender"></p>
+              </div>
+              <div>
+                <p class="studentInfo">Student Address:</p>
+                <p class="studentAddress"></p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="aboutUs">
+            <div class="studentProfile">
+              <div>
+                <p class="studentInfo">Student Name:</p>
+                <p class="studentName"></p>
+              </div>
+              <div>
+                <p class="studentInfo">Student Age:</p>
+                <p class="studentAge"></p>
+              </div>
+              <div>
+                <p class="studentInfo">Student Gender:</p>
+                <p class="studentGender"></p>
+              </div>
+              <div>
+                <p class="studentInfo">Student Address:</p>
+                <p class="studentAddress"></p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="aboutUs">
+            <div class="studentProfile">
+              <div>
+                <p class="studentInfo">Student Name:</p>
+                <p class="studentName"></p>
+              </div>
+              <div>
+                <p class="studentInfo">Student Age:</p>
+                <p class="studentAge"></p>
+              </div>
+              <div>
+                <p class="studentInfo">Student Gender:</p>
+                <p class="studentGender"></p>
+              </div>
+              <div>
+                <p class="studentInfo">Student Address:</p>
+                <p class="studentAddress"></p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

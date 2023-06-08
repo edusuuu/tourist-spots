@@ -1,1 +1,23 @@
-<students
+<?xml version="1.0"?>
+<students>
+    <profile>  
+        <name>Name1</name>
+        <age>Age1</age>
+        <gender>Gender1</gender>
+        <address>Add1</address>
+    </profile>
+
+    <profile>  
+        <name>Name2</name>
+        <age>Age2</age>
+        <gender>Gender2</gender>
+        <address>Add2</address>
+    </profile>
+
+    <profile>  
+        <name>Name3</name>
+        <age>Age3</age>
+        <gender>Gender3</gender>
+        <address>Add3</address>
+    </profile>
+</students>
