@@ -3,30 +3,34 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
     user-select: none;
-}
-
-.Attractions {
+    height: fit-content;
+    padding: 20px;
+  }
+  
+  .Attractions {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     user-select: none;
     padding: 10px;
-}
-
-.MainAttract {
+    gap: 20px;
+  }
+  
+  .MainAttract {
     color: white;
-    font-size: 100px;
+    font-size: 60px;
     -webkit-text-stroke: 2px black;
-}
-
-.AttractContainer {
-    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .AttractContainer {
+    padding: 5px;
     user-select: none;
-}
-
-.imgcontainer {
+    margin: 0;
+  }
+  
+  .imgcontainer {
     cursor: pointer;
     height: 300px;
     width: 200px;
@@ -36,24 +40,24 @@
     position: relative;
     overflow: hidden;
     justify-content: center;
-}
-
-.imgcontainer img,
-.imgcontainer .content {
+  }
+  
+  .imgcontainer img,
+  .imgcontainer .content {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: 0.5s ease-in-out;
-}
-
-.TouristSpot {
+  }
+  
+  .TouristSpot {
     color: #515151;
     font-size: 20px;
     margin-top: 0.5rem;
-}
-
-.content {
+  }
+  
+  .content {
     background: rgb(0, 0, 0, 0.4);
     display: flex;
     flex-direction: column;
@@ -61,33 +65,25 @@
     padding: 5px;
     color: #fff;
     opacity: 0;
-}
-
-.content h3 {
+  }
+  
+  .content h3 {
     font-size: 25px;
-}
-
-.content .info {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    font-size: 20px;
-    gap: 3px;
-}
-
-.municipality,
-.type {
+  }
+  
+  .municipality,
+  .type {
     display: inline-block;
-}
-
-.imgcontainer:hover {
+  }
+  
+  .imgcontainer:hover {
     width: 450px;
-}
-
-.imgcontainer:hover img:nth-child(2) {
+  }
+  
+  .imgcontainer:hover img:nth-child(2) {
     opacity: 0;
-}
-
-.imgcontainer:hover .content {
+  }
+  
+  .imgcontainer:hover .content {
     opacity: 1;
-}
+  }

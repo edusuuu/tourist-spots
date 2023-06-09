@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tourist Attraction</title>
+    <title>Boracay Top Beaches</title>
 
     <link rel="stylesheet" href="Main.css" />
     <link rel="stylesheet" href="Intro.css" />
     <link rel="stylesheet" href="Attraction.css" />
+    <link rel="stylesheet" href="IntroBG.css"/>
     <link rel="stylesheet" href="Gallery.css" />
     <link rel="stylesheet" href="About.css" />
     <link rel="stylesheet" href="Contact.css" />
@@ -21,6 +22,14 @@
     <script src="Intro.js" defer></script>
     <script src="Attraction.js" defer></script>
     <script src="Gallery.js" defer></script>
+    <script src="About.js" defer></script>
+    <script src="Contact.js"></script>
+
+    <script>
+      function redirectToPage(url) {
+        window.location.href = url;
+      }
+    </script>
   </head>
   <body>
     <section class="IntroSec">
@@ -38,100 +47,101 @@
       </header>
 
       <div class="IntroContainer">
-        <h1>Welcome to Baguio!</h1>
+        <h1>Welcome to Boracay!</h1>
         <p>Discover the beauty and wonders of our destination</p>
-        <a href="https://en.wikipedia.org/wiki/Baguio" class="infoBtn"
-          >About Baguio</a
-        >
+        <a href="https://en.wikipedia.org/wiki/Boracay" class="infoBtn">About Boracay</a>
       </div>
     </section>
 
     <section id="attractions" class="AttractSec">
-      <h2 class="MainAttract">Baguio</h2>
-
+      <h2 class="MainAttract">Boracay</h2>
+    
       <div class="Attractions">
         <div class="AttractContainer">
-          <div class="imgcontainer">
-            <img src="burnhampark1.jpg" alt="" />
-            <img src="burnhampark2.jpg" alt="" />
+          <div class="imgcontainer" onclick="redirectToPage('https://www.google.com/maps/place/White+Beach/@11.9524436,121.9193142,15z/data=!3m1!4b1!4m6!3m5!1s0x33a53c22c3a8466b:0x443e5166ae9cf4b2!8m2!3d11.952444!4d121.929614!16s%2Fg%2F1hm4913kq?entry=ttu')">
+            <img src="images/whiteBeach1.jpg" alt="" />
+            <img src="images/whiteBeach.jpg" alt="" />
             <div class="content">
-              <h3>Burnham Park</h3>
-              <div class="info">
-                <p>Municipality:</p>
-                <p>Baguio City #1</p>
-              </div>
+              <p class="locName">Location:</p>
+              <h3></h3>
             </div>
           </div>
-          <p class="TouristSpot">Tourist Spot #1</p>
+          <p class="TouristSpot"></p>
         </div>
-
+    
         <div class="AttractContainer">
-          <div class="imgcontainer">
-            <img src="burnhampark1.jpg" alt="" />
-            <img src="burnhampark2.jpg" alt="" />
+          <div class="imgcontainer" onclick="redirectToPage('https://www.google.com/maps/place/Boracay+Beach+Path/@11.9574218,121.9240905,17z/data=!3m1!4b1!4m6!3m5!1s0x33a53c21b025da19:0xbce74dd6a4598a53!8m2!3d11.9574218!4d121.9266654!16s%2Fg%2F11cs05z81c?authuser=0&hl=fil&entry=ttu')">
+            <img src="images/boracayIsland.jpg" alt="" />
+            <img src="images/boracayIsland1.jpg" alt="" />
             <div class="content">
-              <h3>Burnham Park</h3>
-              <div class="info">
-                <p>Municipality:</p>
-                <p>Baguio City #2</p>
-              </div>
+              <p class="locName">Location:</p>
+              <h3></h3>
             </div>
           </div>
-          <p class="TouristSpot">Tourist Spot #2</p>
+          <p class="TouristSpot"></p>
         </div>
-
+    
         <div class="AttractContainer">
-          <div class="imgcontainer">
-            <img src="burnhampark1.jpg" alt="" />
-            <img src="burnhampark2.jpg" alt="" />
+          <div class="imgcontainer" onclick="redirectToPage('https://www.google.com/maps/place/Boracay+Beach+Path/@11.9574218,121.9240905,17z/data=!3m1!4b1!4m6!3m5!1s0x33a53c21b025da19:0xbce74dd6a4598a53!8m2!3d11.9574218!4d121.9266654!16s%2Fg%2F11cs05z81c?authuser=0&hl=fil&entry=ttu')">
+            <img src="images/beachPath1.jpg" alt="" />
+            <img src="images/beachPath.jpg" alt="" />
             <div class="content">
-              <h3>Burnham Park</h3>
-              <div class="info">
-                <p>Municipality:</p>
-                <p>Baguio City #3</p>
-              </div>
+              <p class="locName">Location:</p>
+              <h3></h3>
             </div>
           </div>
-          <p class="TouristSpot">Tourist Spot #3</p>
+          <p class="TouristSpot"></p>
         </div>
-
+    
         <div class="AttractContainer">
-          <div class="imgcontainer">
-            <img class="image" src="burnhampark1.jpg" alt="" />
-            <img class="image" src="burnhampark2.jpg" alt="" />
+          <div class="imgcontainer" onclick="redirectToPage('https://www.google.com/maps/place/Bulabog+Beach/@11.9655997,121.9251703,16z/data=!3m1!4b1!4m6!3m5!1s0x33a53c3b63779a11:0x2a8767be81fd4d46!8m2!3d11.9692679!4d121.9273114!16s%2Fg%2F1pycgl_1w?authuser=0&hl=fil&entry=ttu')">
+            <img src="images/bulabogBeach.jpg" alt="" />
+            <img src="images/bulabogBeach1.jpg" alt="" />
             <div class="content">
-              <h3>Burnham Park</h3>
-              <div class="info">
-                <p>Municipality:</p>
-                <p>Baguio City #4</p>
-              </div>
+              <p class="locName">Location:</p>
+              <h3></h3>
             </div>
           </div>
-          <p class="TouristSpot">Tourist Spot #4</p>
+          <p class="TouristSpot"></p>
         </div>
-      </div>
-
+        
+        <div class="AttractContainer">
+          <div class="imgcontainer" onclick="redirectToPage('https://www.google.com/maps/place/Tambisaan+Beach/@11.9498987,121.9449025,17z/data=!4m15!1m8!3m7!1s0x33a53f165196e75d:0x8c921b96c4ffef62!2sTambisaan+Beach!8m2!3d11.9498987!4d121.9470912!10e5!16s%2Fg%2F11fm4w6s3t!3m5!1s0x33a53f165196e75d:0x8c921b96c4ffef62!8m2!3d11.9498987!4d121.9470912!16s%2Fg%2F11fm4w6s3t?authuser=0&hl=fil&entry=ttu')">
+            <img src="images/tambisaanBeach.jpg" alt="" />
+            <img src="images/tambisaanBeach1.jpg" alt="" />
+            <div class="content">
+              <p class="locName">Location:</p>
+              <h3></h3>
+            </div>
+          </div>
+          <p class="TouristSpot"></p>
+        </div>
+    
       <div class="details">
-        <div class="spot hide">
+        <div class="spot">
           <h3 class="spot-attraction"></h3>
-          <p class="spot-municipality"></p>
           <p class="spot-address"></p>
           <p class="spot-details"></p>
         </div>
       </div>
     </section>
-
+    
     <section id="gallery" class="GallSec">
       <div class="GalleryContainer">
         <h2>Photo Gallery</h2>
         <div class="ImageWrapper">
           <i id="left" class="fa-solid fa-angle-left"></i>
           <div class="ImageCarousel">
-            <img src="burnhampark1.jpg" alt="1" />
-            <img src="burnhampark2.jpg" alt="2" />
-            <img src="burnhampark1.jpg" alt="3" />
-            <img src="burnhampark2.jpg" alt="4" />
-            <img src="burnhampark1.jpg" alt="5" />
+            <img src="images/beachPath.jpg" alt="1" />
+            <img src="images/boracayIsland.jpg" alt="2" />
+            <img src="images/beachPath1.jpg" alt="3" />
+            <img src="images/boracayIsland1.jpg" alt="4" />
+            <img src="images/bulabogBeach.jpg" alt="5" />
+            <img src="images/tambisaanBeach.jpg" alt="6" />
+            <img src="images/whiteBeach.jpg" alt="7" />
+            <img src="images/bulabogBeach1.jpg" alt="8" />
+            <img src="images/whiteBeach1.jpg" alt="9" />
+            <img src="images/tambisaanBeach1.jpg" alt="10" />
           </div>
           <i id="right" class="fa-solid fa-angle-right"></i>
         </div>
@@ -141,12 +151,70 @@
     <section id="about" class="about">
       <div class="AboutContainer">
         <h2>About Us</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
+        <div class="InfoContainer">
+          <div class="aboutUs">
+            <div class="studentProfile">
+              <div>
+                <p class="studentInfo">Student Name:</p>
+                <p class="studentName"></p>
+              </div>
+              <div>
+                <p class="studentInfo">Student Age:</p>
+                <p class="studentAge"></p>
+              </div>
+              <div>
+                <p class="studentInfo">Student Gender:</p>
+                <p class="studentGender"></p>
+              </div>
+              <div>
+                <p class="studentInfo">Student Address:</p>
+                <p class="studentAddress"></p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="aboutUs">
+            <div class="studentProfile">
+              <div>
+                <p class="studentInfo">Student Name:</p>
+                <p class="studentName"></p>
+              </div>
+              <div>
+                <p class="studentInfo">Student Age:</p>
+                <p class="studentAge"></p>
+              </div>
+              <div>
+                <p class="studentInfo">Student Gender:</p>
+                <p class="studentGender"></p>
+              </div>
+              <div>
+                <p class="studentInfo">Student Address:</p>
+                <p class="studentAddress"></p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="aboutUs">
+            <div class="studentProfile">
+              <div>
+                <p class="studentInfo">Student Name:</p>
+                <p class="studentName"></p>
+              </div>
+              <div>
+                <p class="studentInfo">Student Age:</p>
+                <p class="studentAge"></p>
+              </div>
+              <div>
+                <p class="studentInfo">Student Gender:</p>
+                <p class="studentGender"></p>
+              </div>
+              <div>
+                <p class="studentInfo">Student Address:</p>
+                <p class="studentAddress"></p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -157,10 +225,10 @@
           If you have any questions or inquiries, feel free to get in touch with
           us.
         </p>
-        <form>
-          <input type="text" placeholder="Your Name" />
-          <input type="email" placeholder="Your Email" />
-          <textarea placeholder="Your Message"></textarea>
+        <form action="https://formsubmit.co/canariavince@gmail.com" method="post">
+          <input type="text" name="name" required placeholder="Your Name" />
+          <input type="email" name="email" required placeholder="Your Email" />
+          <textarea name="msg" required placeholder="Your Message"></textarea>
           <button type="submit">Send Message</button>
         </form>
       </div>
@@ -169,16 +237,6 @@
     <footer>
       <div class="container">
         <p>&copy; 2023 Tourist Attraction. All rights reserved.</p>
-        <ul class="social-icons">
-          <li>
-            <a href="#"><i class="fa fa-facebook"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-          </li>
         </ul>
       </div>
     </footer>

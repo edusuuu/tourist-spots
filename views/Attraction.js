@@ -2,12 +2,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     let TouristSpots = [...document.querySelectorAll(".TouristSpot")];
     let attractions = document.querySelectorAll(".AttractContainer");
     let Parks = [...document.querySelectorAll(".content > h3")];
-    let Municipalities = [...document.querySelectorAll(".info")];
-    let spotMunicipality = document.querySelector(".spot-municipality");
     let spotAttraction = document.querySelector(".spot-attraction");
     let spotAddress = document.querySelector(".spot-address");
     let spotDetails = document.querySelector(".spot-details");
-    const SPOT_WRAPPER = document.querySelector(".details > .spot");
+    const detail = document.querySelector(".details");
+    const detSpot = document.querySelector(".details .spot");
+    const attSec = document.querySelector(".AttractSec");
+    const attCon = document.querySelector(".AttractContainer");
 
     let spots = await fetchSpots();
     PopulateAttractions(spots);
@@ -26,12 +27,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     function UpdateDetails(index) {
-        let [attraction, municipality, address, details] = [
+        let [attraction, address, details] = [
             ...spots[index].children,
         ];
 
         spotAttraction.textContent = attraction.textContent;
-        spotMunicipality.textContent = municipality.textContent;
         spotAddress.textContent = address.textContent;
         spotDetails.textContent = details.textContent;
     }
@@ -43,12 +43,6 @@ document.addEventListener("DOMContentLoaded", async () => {
             ];
             park.textContent = attraction.textContent;
         });
-        Municipalities.forEach((Municipality, index) => {
-            let [_attraction, municipality, _address, _details] = [
-                ...spots[index].children,
-            ];
-            Municipality.textContent = `Municipality: ${municipality.textContent}`;
-        });
         TouristSpots.forEach((touristSpot, index) => {
             let [attraction, _municipality, _address, _details] = [
                 ...spots[index].children,
@@ -59,10 +53,35 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     attractions.forEach((attraction, index) => {
         console.log(attraction);
-        attraction.onclick = () => {
-            SPOT_WRAPPER.classList.remove("hide");
-            SPOT_WRAPPER.classList.add("show");
+        attraction.onmouseover = () => {
             UpdateDetails(index);
+
+            void detail.offsetWidth;
+            detail.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.9)";
+            detail.style.color = "black";
+            detail.style.maxWidth = "1300px";
+            detail.style.transform = "scale(1.1)";
+            detail.style.height = "fit-content"
+            detail.style.marginBottom = "40px";
+            detail.style.transition = "box-shadow 0.5s ease-in-out, color 0.5s ease, max-width 0.5s ease, transform 0.5s ease, height 0.5s ease, margin-bottom 0.5s ease";
+            detSpot.style.borderColor = "black";
+            detSpot.style.transition = "border-color 0.5s ease";
+
+            attCon.style.marginBottom = "10px";
+            attCon.style.transition= "margin-bottom 0.5s ease";
+        };
+        attraction.onmouseout = () => {
+            detail.style.color = "white";
+            detail.style.transition = "none";
+            detail.style.boxShadow = "none";
+            detail.style.transform = "scale(0.7)";
+            detail.style.fontSize = "0";
+            detail.style.transition = "box-shadow 0.5s ease-in-out, color 0.5s ease, max-width 0.5s ease, transform 0.5s ease, font-size 0.5s ease";
+            detSpot.style.borderColor = "white";
+            detSpot.style.transition = "border-color 0.5s ease";
+
+            attCon.style.marginBottom = "0";
+            attCon.style.transition= "margin-bottom 0.5s ease";
         };
     });
 });

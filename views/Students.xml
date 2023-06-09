@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<students>
+    <profile>  
+        <name>Vince Jeremy Canaria</name>
+        <age>19 Years Old</age>
+        <gender>Male</gender>
+        <address>Balanga City, Bataan</address>
+    </profile>
+
+    <profile>  
+        <name>Christian Jae Dabu</name>
+        <age>19 Years Old</age>
+        <gender>Male</gender>
+        <address>Abucay, Bataan</address>
+    </profile>
+
+    <profile>  
+        <name>Edzel John Angeles</name>
+        <age>22 Years Old</age>
+        <gender>Male</gender>
+        <address>Samal, Bataan</address>
+    </profile>
+</students>

@@ -50,14 +50,3 @@ footer {
 footer p {
   margin-bottom: 10px;
 }
-  
-.social-icons li {
-  display: inline-block;
-  margin: 0 5px;
-}
-  
-.social-icons li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-}
