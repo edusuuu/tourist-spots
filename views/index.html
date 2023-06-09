@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tourist Attraction</title>
+    <title>Boracay Top Beaches</title>
 
     <link rel="stylesheet" href="Main.css" />
     <link rel="stylesheet" href="Intro.css" />
@@ -23,6 +23,13 @@
     <script src="Attraction.js" defer></script>
     <script src="Gallery.js" defer></script>
     <script src="About.js" defer></script>
+    <script src="Contact.js"></script>
+
+    <script>
+      function redirectToPage(url) {
+        window.location.href = url;
+      }
+    </script>
   </head>
   <body>
     <section class="IntroSec">
@@ -51,7 +58,7 @@
     
       <div class="Attractions">
         <div class="AttractContainer">
-          <div class="imgcontainer">
+          <div class="imgcontainer" onclick="redirectToPage('https://www.google.com/maps/place/White+Beach/@11.9524436,121.9193142,15z/data=!3m1!4b1!4m6!3m5!1s0x33a53c22c3a8466b:0x443e5166ae9cf4b2!8m2!3d11.952444!4d121.929614!16s%2Fg%2F1hm4913kq?entry=ttu')">
             <img src="images/whiteBeach1.jpg" alt="" />
             <img src="images/whiteBeach.jpg" alt="" />
             <div class="content">
@@ -63,7 +70,7 @@
         </div>
     
         <div class="AttractContainer">
-          <div class="imgcontainer">
+          <div class="imgcontainer" onclick="redirectToPage('https://www.google.com/maps/place/Boracay+Beach+Path/@11.9574218,121.9240905,17z/data=!3m1!4b1!4m6!3m5!1s0x33a53c21b025da19:0xbce74dd6a4598a53!8m2!3d11.9574218!4d121.9266654!16s%2Fg%2F11cs05z81c?authuser=0&hl=fil&entry=ttu')">
             <img src="images/boracayIsland.jpg" alt="" />
             <img src="images/boracayIsland1.jpg" alt="" />
             <div class="content">
@@ -75,7 +82,7 @@
         </div>
     
         <div class="AttractContainer">
-          <div class="imgcontainer">
+          <div class="imgcontainer" onclick="redirectToPage('https://www.google.com/maps/place/Boracay+Beach+Path/@11.9574218,121.9240905,17z/data=!3m1!4b1!4m6!3m5!1s0x33a53c21b025da19:0xbce74dd6a4598a53!8m2!3d11.9574218!4d121.9266654!16s%2Fg%2F11cs05z81c?authuser=0&hl=fil&entry=ttu')">
             <img src="images/beachPath1.jpg" alt="" />
             <img src="images/beachPath.jpg" alt="" />
             <div class="content">
@@ -87,7 +94,7 @@
         </div>
     
         <div class="AttractContainer">
-          <div class="imgcontainer">
+          <div class="imgcontainer" onclick="redirectToPage('https://www.google.com/maps/place/Bulabog+Beach/@11.9655997,121.9251703,16z/data=!3m1!4b1!4m6!3m5!1s0x33a53c3b63779a11:0x2a8767be81fd4d46!8m2!3d11.9692679!4d121.9273114!16s%2Fg%2F1pycgl_1w?authuser=0&hl=fil&entry=ttu')">
             <img src="images/bulabogBeach.jpg" alt="" />
             <img src="images/bulabogBeach1.jpg" alt="" />
             <div class="content">
@@ -99,7 +106,7 @@
         </div>
         
         <div class="AttractContainer">
-          <div class="imgcontainer">
+          <div class="imgcontainer" onclick="redirectToPage('https://www.google.com/maps/place/Tambisaan+Beach/@11.9498987,121.9449025,17z/data=!4m15!1m8!3m7!1s0x33a53f165196e75d:0x8c921b96c4ffef62!2sTambisaan+Beach!8m2!3d11.9498987!4d121.9470912!10e5!16s%2Fg%2F11fm4w6s3t!3m5!1s0x33a53f165196e75d:0x8c921b96c4ffef62!8m2!3d11.9498987!4d121.9470912!16s%2Fg%2F11fm4w6s3t?authuser=0&hl=fil&entry=ttu')">
             <img src="images/tambisaanBeach.jpg" alt="" />
             <img src="images/tambisaanBeach1.jpg" alt="" />
             <div class="content">
@@ -218,10 +225,10 @@
           If you have any questions or inquiries, feel free to get in touch with
           us.
         </p>
-        <form>
-          <input type="text" placeholder="Your Name" />
-          <input type="email" placeholder="Your Email" />
-          <textarea placeholder="Your Message"></textarea>
+        <form action="https://formsubmit.co/canariavince@gmail.com" method="post">
+          <input type="text" name="Name" required placeholder="Your Name" />
+          <input type="email" name="Email" required placeholder="Your Email" />
+          <textarea name="Message" required placeholder="Your Message"></textarea>
           <button type="submit">Send Message</button>
         </form>
       </div>
@@ -230,16 +237,6 @@
     <footer>
       <div class="container">
         <p>&copy; 2023 Tourist Attraction. All rights reserved.</p>
-        <ul class="social-icons">
-          <li>
-            <a href="#"><i class="fa fa-facebook"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-          </li>
         </ul>
       </div>
     </footer>
