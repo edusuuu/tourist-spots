@@ -23,18 +23,34 @@
 
 .aboutUs:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  cursor: pointer;
 }
 
 .studentInfo {
   font-weight: bold;
 }
 
-.studentProfile {
+.studentImg {
+  width: 100px;
+  height: 100px;
 }
 
+.studentImg,
 .studentName,
 .studentAge,
 .studentGender,
 .studentAddress {
   margin-bottom: 5px;
+}
+
+.googleMap {
+  height: 500px;
+  width: 100%;
+  margin-top: 40px;
+  border: 3px solid rgb(0, 0, 0);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.googleMap:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 }

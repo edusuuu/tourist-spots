@@ -1,23 +1,23 @@
 <?xml version="1.0"?>
 <students>
     <profile>  
-        <name>Vince Jeremy Canaria</name>
+        <name>Vince Jeremy P. Canaria</name>
         <age>19 Years Old</age>
-        <gender>Male</gender>
+        <yearSec>NW2C</yearSec>
         <address>Balanga City, Bataan</address>
     </profile>
 
     <profile>  
-        <name>Christian Jae Dabu</name>
+        <name>Christian Jae G. Dabu</name>
         <age>19 Years Old</age>
-        <gender>Male</gender>
+        <yearSec>NW2C</yearSec>
         <address>Abucay, Bataan</address>
     </profile>
 
     <profile>  
-        <name>Edzel John Angeles</name>
+        <name>Edzel John R. Angeles</name>
         <age>22 Years Old</age>
-        <gender>Male</gender>
+        <yearSec>NW2C</yearSec>
         <address>Samal, Bataan</address>
     </profile>
 </students>
