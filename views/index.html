@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Boracay Top Beaches</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <title>Explore Boracay</title>
 
     <link rel="stylesheet" href="Main.css" />
     <link rel="stylesheet" href="Intro.css" />
@@ -14,16 +15,14 @@
     <link rel="stylesheet" href="About.css" />
     <link rel="stylesheet" href="Contact.css" />
     <link rel="stylesheet" href="details.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
 
     <script src="Intro.js" defer></script>
     <script src="Attraction.js" defer></script>
     <script src="Gallery.js" defer></script>
     <script src="About.js" defer></script>
-    <script src="Contact.js"></script>
+
+    <script src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCqwiayqsO805SrRmHN3rEdoEeQAInpHQU&callback=initMap&libraries=&v=weekly" async defer></script>
 
     <script>
       function redirectToPage(url) {
@@ -153,7 +152,10 @@
         <h2>About Us</h2>
         <div class="InfoContainer">
           <div class="aboutUs">
-            <div class="studentProfile">
+            <div id="loc1" class="studentProfile" data-lat="14.667348013294871" data-lng="120.54692548675989">
+              <div>
+                <img class="studentImg" src="images/aboutUs1.jpg" alt="1" />
+              </div>
               <div>
                 <p class="studentInfo">Student Name:</p>
                 <p class="studentName"></p>
@@ -163,8 +165,8 @@
                 <p class="studentAge"></p>
               </div>
               <div>
-                <p class="studentInfo">Student Gender:</p>
-                <p class="studentGender"></p>
+                <p class="studentInfo">Year & Section:</p>
+                <p class="studentYearSec"></p>
               </div>
               <div>
                 <p class="studentInfo">Student Address:</p>
@@ -174,7 +176,10 @@
           </div>
   
           <div class="aboutUs">
-            <div class="studentProfile">
+            <div id="loc2" class="studentProfile" data-lat="14.727915227413604" data-lng="120.52377694014812">
+              <div>
+                <img class="studentImg" src="images/aboutUs2.jpg" alt="1" />
+              </div>
               <div>
                 <p class="studentInfo">Student Name:</p>
                 <p class="studentName"></p>
@@ -184,8 +189,8 @@
                 <p class="studentAge"></p>
               </div>
               <div>
-                <p class="studentInfo">Student Gender:</p>
-                <p class="studentGender"></p>
+                <p class="studentInfo">Year & Section:</p>
+                <p class="studentYearSec"></p>
               </div>
               <div>
                 <p class="studentInfo">Student Address:</p>
@@ -195,7 +200,10 @@
           </div>
   
           <div class="aboutUs">
-            <div class="studentProfile">
+            <div id="loc3" class="studentProfile" data-lat="14.757340732426389" data-lng="120.49989245532173">
+              <div>
+                <img class="studentImg" src="images/aboutUs3.jpg" alt="1" />
+              </div>
               <div>
                 <p class="studentInfo">Student Name:</p>
                 <p class="studentName"></p>
@@ -205,8 +213,8 @@
                 <p class="studentAge"></p>
               </div>
               <div>
-                <p class="studentInfo">Student Gender:</p>
-                <p class="studentGender"></p>
+                <p class="studentInfo">Year & Section:</p>
+                <p class="studentYearSec"></p>
               </div>
               <div>
                 <p class="studentInfo">Student Address:</p>
@@ -215,6 +223,8 @@
             </div>
           </div>
         </div>
+
+        <div id="googleMap" class="googleMap"></div>
       </div>
     </section>
 
