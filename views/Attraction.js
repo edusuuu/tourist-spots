@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     let spotDetails = document.querySelector(".spot-details");
     const detail = document.querySelector(".details");
     const detSpot = document.querySelector(".details .spot");
-    const attSec = document.querySelector(".AttractSec");
     const attCon = document.querySelector(".AttractContainer");
+    const attCon1 = document.querySelector(".AttractContainer1");
 
     let spots = await fetchSpots();
     PopulateAttractions(spots);
@@ -38,19 +38,19 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     function PopulateAttractions(spots) {
         Parks.forEach((park, index) => {
-            let [attraction, _municipality, _address, _details] = [
+            let [attraction, _address, _details] = [
                 ...spots[index].children,
             ];
             park.textContent = attraction.textContent;
         });
         TouristSpots.forEach((touristSpot, index) => {
-            let [attraction, _municipality, _address, _details] = [
+            let [attraction, _address, _details] = [
                 ...spots[index].children,
             ];
             touristSpot.textContent = attraction.textContent;
         });
     }
-
+    
     attractions.forEach((attraction, index) => {
         console.log(attraction);
         attraction.onmouseover = () => {
@@ -59,16 +59,13 @@ document.addEventListener("DOMContentLoaded", async () => {
             void detail.offsetWidth;
             detail.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.9)";
             detail.style.color = "black";
-            detail.style.maxWidth = "1300px";
+            detail.style.maxWidth = "1200px";
             detail.style.transform = "scale(1.1)";
             detail.style.height = "fit-content"
-            detail.style.marginBottom = "40px";
+            detail.style.marginBottom = "10px";
             detail.style.transition = "box-shadow 0.5s ease-in-out, color 0.5s ease, max-width 0.5s ease, transform 0.5s ease, height 0.5s ease, margin-bottom 0.5s ease";
             detSpot.style.borderColor = "black";
             detSpot.style.transition = "border-color 0.5s ease";
-
-            attCon.style.marginBottom = "10px";
-            attCon.style.transition= "margin-bottom 0.5s ease";
         };
         attraction.onmouseout = () => {
             detail.style.color = "white";
@@ -79,9 +76,6 @@ document.addEventListener("DOMContentLoaded", async () => {
             detail.style.transition = "box-shadow 0.5s ease-in-out, color 0.5s ease, max-width 0.5s ease, transform 0.5s ease, font-size 0.5s ease";
             detSpot.style.borderColor = "white";
             detSpot.style.transition = "border-color 0.5s ease";
-
-            attCon.style.marginBottom = "0";
-            attCon.style.transition= "margin-bottom 0.5s ease";
         };
     });
 });
