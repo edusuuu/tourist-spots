@@ -50,9 +50,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             touristSpot.textContent = attraction.textContent;
         });
     }
-    
+
     attractions.forEach((attraction, index) => {
-        console.log(attraction);
         attraction.onmouseover = () => {
             UpdateDetails(index);
 
