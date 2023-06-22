@@ -5,10 +5,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     let spotAttraction = document.querySelector(".spot-attraction");
     let spotAddress = document.querySelector(".spot-address");
     let spotDetails = document.querySelector(".spot-details");
-    const detail = document.querySelector(".details");
-    const detSpot = document.querySelector(".details .spot");
-    const attCon = document.querySelector(".AttractContainer");
-    const attCon1 = document.querySelector(".AttractContainer1");
+    let spot = document.querySelector(".spot")
 
     let spots = await fetchSpots();
     PopulateAttractions(spots);
@@ -50,32 +47,25 @@ document.addEventListener("DOMContentLoaded", async () => {
             touristSpot.textContent = attraction.textContent;
         });
     }
-    
+
     attractions.forEach((attraction, index) => {
-        console.log(attraction);
         attraction.onmouseover = () => {
             UpdateDetails(index);
-
-            void detail.offsetWidth;
-            detail.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.9)";
-            detail.style.color = "black";
-            detail.style.maxWidth = "1200px";
-            detail.style.transform = "scale(1.1)";
-            detail.style.height = "fit-content"
-            detail.style.marginBottom = "10px";
-            detail.style.transition = "box-shadow 0.5s ease-in-out, color 0.5s ease, max-width 0.5s ease, transform 0.5s ease, height 0.5s ease, margin-bottom 0.5s ease";
-            detSpot.style.borderColor = "black";
-            detSpot.style.transition = "border-color 0.5s ease";
+            showDetails();
         };
         attraction.onmouseout = () => {
-            detail.style.color = "white";
-            detail.style.transition = "none";
-            detail.style.boxShadow = "none";
-            detail.style.transform = "scale(0.7)";
-            detail.style.fontSize = "0";
-            detail.style.transition = "box-shadow 0.5s ease-in-out, color 0.5s ease, max-width 0.5s ease, transform 0.5s ease, font-size 0.5s ease";
-            detSpot.style.borderColor = "white";
-            detSpot.style.transition = "border-color 0.5s ease";
+            hideDetails();
         };
     });
+
+    function hideDetails() {
+        spot.classList.remove("show");
+        spot.classList.add("hide");
+    }
+
+    function showDetails() {
+        spot.classList.remove("hide");
+        spot.classList.add("show");
+    }
 });
+
