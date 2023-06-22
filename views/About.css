@@ -26,6 +26,10 @@
   cursor: pointer;
 }
 
+.about p {
+  margin: 3px;
+}
+
 .studentInfo {
   font-weight: bold;
 }
