@@ -1,13 +1,12 @@
 .details {
-  transform: scale(0.7);
-  color: rgba(0, 0, 0, 0);
   text-align: center;
-  border-radius: 4px;
 }
 
 .details .spot {
   padding: 10px 20px;
+  border-radius: 4px;
   box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .details .spot-attraction {
@@ -26,9 +25,40 @@
 }
 
 .spot.show {
-  display: block;
+  visibility: visible;
+  animation: zoom-in 500ms ease;
+  transform: scale(1);
+  transition: visibility 500ms ease;
 }
 
 .spot.hide {
-  display: none;
+  transition: visibility 500ms ease;
+  animation: zoom-out 500ms ease;
+  visibility: hidden;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  40% {
+    transform: scale(0.4);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes zoom-out {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
 }
