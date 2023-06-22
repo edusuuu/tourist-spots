@@ -21,31 +21,34 @@ body, h1, h2, h3, p, ul, li, form, input, textarea, button {
     padding: 0 20px;
   }
   
+  /* Nav Bar */
   header {
-    background-color: rgba(0, 0, 0, 0);
-    padding: 20px 0;
-    margin-bottom: 230px;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 0;
+    z-index: 100;
   }
-  
+
   nav {
     display: flex;
     justify-content: space-between;
   }
-  
+
   .menu li {
     display: inline-block;
     margin-left: 50px;
   }
-  
+
   .menu li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 500;
     position: relative;
   }
 
   .menu li a::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 1.5px;
@@ -55,13 +58,13 @@ body, h1, h2, h3, p, ul, li, form, input, textarea, button {
     left: 0;
     transform-origin: right;
     transform: scaleX(0);
-    transition: transform .2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
   }
 
-.menu li a:hover::before {
-  transform-origin: left;
-  transform: scaleX(1);
-}
+  .menu li a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
 
 /* Responsive Design */
 @media (max-width: 768px) {
